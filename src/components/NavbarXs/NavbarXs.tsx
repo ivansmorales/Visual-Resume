@@ -8,12 +8,19 @@ import EmailIcon from '@material-ui/icons/Email';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import './styles.scss';
 
-const Navbar_xs = () => {
+const NavbarXs = () => {
+  const preventDefault = (event: any) => event.preventDefault();
+
   return (
     <div className="navxs__section">
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" color="inherit" aria-label="menu">
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            href="#home"
+          >
             <HomeIcon />
           </IconButton>
           <IconButton edge="start" color="inherit" aria-label="face">
@@ -34,4 +41,4 @@ const Navbar_xs = () => {
   );
 };
 
-export default Navbar_xs;
+export default NavbarXs;
