@@ -1,9 +1,13 @@
-import "./theme/styles.scss";
+import React from 'react';
+import Home from './components/Home/Home';
+import Navbar_xs from './components/Navbar_xs/Navbar_xs';
+import './theme/styles.scss';
 
 function App() {
   return (
     <>
-    <h1>Test </h1>
+      <Navbar_xs />
+      {/* <Home /> */}
     </>
   );
 }
