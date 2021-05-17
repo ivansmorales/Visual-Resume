@@ -1,0 +1,21 @@
+/* Open Sans */
+// Light
+@font-face {
+  font-family: $font-family-primary;
+  src: url(./fonts/Open_Sans/OpenSans-Light.ttf) format('truetype');
+  font-weight: $font-weight-light;
+}
+
+// Regular
+@font-face {
+  font-family: $font-family-primary;
+  src: url(./fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+  font-weight: $font-weight-regular;
+}
+
+// Bold
+@font-face {
+  font-family: $font-family-primary;
+  src: url(./fonts/Open_Sans/OpenSans-Bold.ttf) format('truetype');
+  font-weight: $font-weight-bold;
+}
