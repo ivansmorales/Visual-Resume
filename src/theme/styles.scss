@@ -1,5 +1,9 @@
 @import 'reset', 'colors', 'variables', 'typography', 'fontface';
 
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
+
 .container {
   width: 100%;
   max-width: 1480px;
@@ -18,4 +22,8 @@
       padding-top: 20px;
     }
   }
+}
+
+section {
+  margin-top: $spacing;
 }

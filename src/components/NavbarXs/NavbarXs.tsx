@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -8,31 +9,60 @@ import EmailIcon from '@material-ui/icons/Email';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import './styles.scss';
 
-const NavbarXs = () => {
+interface NavbarXsProps {
+  setSelectedView: any;
+}
+
+const NavbarXs = (props: NavbarXsProps) => {
   const preventDefault = (event: any) => event.preventDefault();
 
   return (
     <div className="navxs__section">
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
           <IconButton
             edge="start"
             color="inherit"
             aria-label="menu"
             href="#home"
+            onClick={() => props.setSelectedView('Home')}
           >
             <HomeIcon />
           </IconButton>
-          <IconButton edge="start" color="inherit" aria-label="face">
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="face"
+            href="#about"
+            onClick={() => props.setSelectedView('About')}
+          >
             <FaceIcon />
           </IconButton>
-          <IconButton edge="start" color="inherit" aria-label="face">
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="face"
+            href="#resume"
+            onClick={() => props.setSelectedView('Resume')}
+          >
             <ReceiptIcon />
           </IconButton>
-          <IconButton edge="start" color="inherit" aria-label="face">
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="face"
+            href="#news"
+            onClick={() => props.setSelectedView('News')}
+          >
             <AssignmentIndIcon />
           </IconButton>
-          <IconButton edge="start" color="inherit" aria-label="face">
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="face"
+            href="#contact"
+            onClick={() => props.setSelectedView('Contact')}
+          >
             <EmailIcon />
           </IconButton>
         </Toolbar>

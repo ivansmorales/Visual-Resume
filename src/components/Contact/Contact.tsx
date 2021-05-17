@@ -1,11 +1,11 @@
-import "./styles.scss";
+import './styles.scss';
 
 const Contact = () => {
-    return (
-        <div className="contact__section" id="contact">
-            
-        </div>
-    )
-}
+  return (
+    <section className="contact__section" id="contact">
+      <h1>Contact</h1>
+    </section>
+  );
+};
 
-export default Contact
+export default Contact;

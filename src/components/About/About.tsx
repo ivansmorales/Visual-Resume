@@ -1,11 +1,11 @@
-import "./styles.scss";
+import './styles.scss';
 
 const About = () => {
-    return (
-        <div className="about__section" id="about">
-            
-        </div>
-    )
-}
+  return (
+    <section className="about__section" id="about">
+      <h2>Sobre mí</h2>
+    </section>
+  );
+};
 
-export default About
+export default About;

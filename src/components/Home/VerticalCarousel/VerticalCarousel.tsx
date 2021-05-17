@@ -7,25 +7,23 @@ const VerticalCarousel = () => {
 
   return (
     <div>
-      <span>
-        Soy
-        <Carousel
-          autoPlay={true}
-          showArrows={false}
-          showIndicators={false}
-          showStatus={false}
-          showThumbs={false}
-          infiniteLoop={true}
-          stopOnHover={false}
-          axis="vertical"
-        >
-          {data.map((word, index) => (
-            <span key={index}>
-              <b>{word}</b>
-            </span>
-          ))}
-        </Carousel>
-      </span>
+      <Carousel
+        autoPlay={true}
+        showArrows={false}
+        showIndicators={false}
+        showStatus={false}
+        showThumbs={false}
+        infiniteLoop={true}
+        stopOnHover={false}
+        interval={5000}
+        axis="vertical"
+      >
+        {data.map((word, index) => (
+          <span key={index}>
+            <b>{word}</b>
+          </span>
+        ))}
+      </Carousel>
     </div>
   );
 };

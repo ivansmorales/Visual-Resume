@@ -5,7 +5,7 @@ import './styles.scss';
 
 const Home = () => {
   return (
-    <div className="home__section" id="home">
+    <section className="home__section" id="home">
       <div className="container">
         <Grid container spacing={3}>
           <Grid item xs={12} lg={12}>
@@ -13,12 +13,13 @@ const Home = () => {
             <h2>
               Iván <span>Morales</span>
             </h2>
+            <span>Soy &nbsp;</span>
             <VerticalCarousel />
             <button>Descarga mi CV</button>
           </Grid>
         </Grid>
       </div>
-    </div>
+    </section>
   );
 };
 

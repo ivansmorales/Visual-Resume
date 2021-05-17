@@ -1,11 +1,11 @@
-import "./styles.scss";
+import './styles.scss';
 
 const Resume = () => {
-    return (
-        <div className="resume__section" id="resume">
-            
-        </div>
-    )
-}
+  return (
+    <section className="resume__section" id="resume">
+      <h1>Resume</h1>
+    </section>
+  );
+};
 
-export default Resume
+export default Resume;
