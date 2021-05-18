@@ -7,10 +7,13 @@ import ReceiptIcon from '@material-ui/icons/Receipt';
 import FaceIcon from '@material-ui/icons/Face';
 import EmailIcon from '@material-ui/icons/Email';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import Brightness4Icon from '@material-ui/icons/Brightness4';
 import './styles.scss';
 
 interface NavbarXsProps {
   setSelectedView: any;
+  setDarkMode: any;
+  darkMode: any;
 }
 
 const NavbarXs = (props: NavbarXsProps) => {
@@ -64,6 +67,14 @@ const NavbarXs = (props: NavbarXsProps) => {
             onClick={() => props.setSelectedView('Contact')}
           >
             <EmailIcon />
+          </IconButton>
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="face"
+            onClick={() => props.setDarkMode(!props.darkMode)}
+          >
+            <Brightness4Icon />
           </IconButton>
         </Toolbar>
       </AppBar>
