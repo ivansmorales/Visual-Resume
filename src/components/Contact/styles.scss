@@ -1,7 +1,15 @@
 @import 'theme/colors', 'theme/variables';
 
 .contact__section {
+  text-align: center;
+
   .cards {
     margin: $spacing;
+  }
+
+  .form__container {
+    button {
+      margin-top: $spacing/2;
+    }
   }
 }
