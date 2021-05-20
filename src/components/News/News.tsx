@@ -1,9 +1,10 @@
 import './styles.scss';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import CardRepositorie from './CardRepositorie/CardRepositorie';
 
 const News = () => {
-  const [repos, setRepos] = useState(null);
+  const [repos, setRepos] = useState<any[]>([]);
   const [lastComitHash, setLastCommitHash] = useState(null);
 
   const getRepositories = async () => {
@@ -17,8 +18,8 @@ const News = () => {
 
   const getCommitActivity = async () => {
     // First commit: 391e3a7f6f52eb71b9b7a44202b10be28033a435
-    // Last commit
     const firstCommitHash = '391e3a7f6f52eb71b9b7a44202b10be28033a435';
+    // Last commit
     const lastCommitUrl =
       'https://api.github.com/repos/ivansmorales/mywebsite/git/refs/heads/master';
     axios(lastCommitUrl).then((response) => {
@@ -47,6 +48,17 @@ const News = () => {
         </h1>
         <div className="last-repos">
           <h2>Últimos tres repositorios</h2>
+          {repos &&
+            repos.slice(0, 3).map((item) => {
+              return (
+                <CardRepositorie
+                  name={item.name}
+                  url={item.url}
+                  created_at={item.created_at}
+                  updated_at={item.updated_at}
+                />
+              );
+            })}
         </div>
       </div>
     </section>
