@@ -15,7 +15,9 @@ const Home = () => {
             </h2>
             <span>Soy &nbsp;</span>
             <VerticalCarousel />
-            <button>Descarga mi CV</button>
+            <div className="button_container">
+              <button>Descarga mi CV</button>
+            </div>
           </Grid>
         </Grid>
       </div>
