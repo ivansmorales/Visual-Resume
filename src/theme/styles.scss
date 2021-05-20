@@ -27,3 +27,27 @@ body {
 section {
   margin-top: $spacing;
 }
+
+button {
+  border: 0;
+  height: 40px;
+  font-size: $font-size-h6 !important;
+  padding: 0 32px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border-radius: 3px;
+  background-color: $color-primary;
+  color: $color-white;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.MuiSvgIcon-colorPrimary {
+  color: $color-primary !important;
+}
+.MuiAppBar-colorPrimary {
+  color: #fff;
+  background-color: $color-primary !important;
+}
