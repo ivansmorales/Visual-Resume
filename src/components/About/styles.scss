@@ -8,5 +8,14 @@
     margin-top: $spacing;
     align-items: center;
     display: flex;
+    span {
+      color: $color-primary;
+    }
+  }
+  .my-info {
+    margin: $spacing 0;
+    p {
+      margin: $spacing-half 0;
+    }
   }
 }
