@@ -1,11 +1,8 @@
-import "./styles.scss";
+import { Home } from '../../models/models';
 
-const Home = () => {
-    return (
-        <div className="home__section" id="home">
-            
-        </div>
-    )
-}
-
-export default Home
+export const HomeContent: Home = {
+  img: 'url',
+  name: 'Iván',
+  subname: 'Morales',
+  titles: ['Desarrollador', 'Estudiante', 'Ingeniero'],
+};

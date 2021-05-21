@@ -2,8 +2,13 @@ import Grid from '@material-ui/core/Grid';
 import VerticalCarousel from './VerticalCarousel/VerticalCarousel';
 import React from 'react';
 import './styles.scss';
+import { HomeContent } from '../../content/Home/HomeContent';
 
-const Home = () => {
+interface HomeProps {
+  data: typeof HomeContent;
+}
+
+const Home = (props: HomeProps) => {
   return (
     <section className="home__section" id="home">
       <div className="container">
@@ -13,10 +18,7 @@ const Home = () => {
             <h1>
               Iván <span>Morales</span>
             </h1>
-            <div className="description">
-              <span>Soy &nbsp;</span>
-              <VerticalCarousel />
-            </div>
+            <VerticalCarousel words={props.data.titles} />
             <div className="button_container">
               <button>Descarga mi CV</button>
             </div>

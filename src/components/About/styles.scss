@@ -1,0 +1,8 @@
+@import 'theme/colors', 'theme/variables';
+
+.about__section {
+  text-align: center;
+  h1 span {
+    color: $color-primary;
+  }
+}
