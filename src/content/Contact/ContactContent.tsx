@@ -1,11 +1,7 @@
-import "./styles.scss";
+import { Contact } from '../../models/models';
 
-const Contact = () => {
-    return (
-        <div className="contact__section" id="contact">
-            
-        </div>
-    )
-}
-
-export default Contact
+export const ContactContent: Contact = {
+  email: 'ivann_mg@hotmail.com',
+  phone: '55 2723 9028',
+  location: 'Ciudad de México',
+};

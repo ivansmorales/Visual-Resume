@@ -14,3 +14,9 @@ export interface About {
   linkedin: string;
   interests: string[];
 }
+
+export interface Contact {
+  email: string;
+  phone?: string;
+  location?: string;
+}

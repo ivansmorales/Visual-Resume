@@ -2,23 +2,35 @@ import ContactCard from './ContactCard/ContactCard';
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-import './styles.scss';
 import ContactForm from './ContactForm/ContactForm';
+import './styles.scss';
+import { ContactContent } from '../../content/Contact/ContactContent';
 
-const Contact = () => {
+interface ContactProps {
+  data: typeof ContactContent;
+}
+
+const Contact = (props: ContactProps) => {
   return (
     <section className="contact__section" id="contact">
-      <h1 className="header">Contact</h1>
+      <h1 className="header">Contáctame</h1>
       <div className="cards">
-        <ContactCard icon={<PhoneIcon color="primary" />} text={'5527239028'} />
+        {props.data.phone && (
+          <ContactCard
+            icon={<PhoneIcon color="primary" />}
+            text={props.data.phone}
+          />
+        )}
         <ContactCard
           icon={<MailIcon color="primary" />}
-          text={'ivann_mg@hotmail.com'}
+          text={props.data.email}
         />
-        <ContactCard
-          icon={<LocationOnIcon color="primary" />}
-          text={'Ciudad de México'}
-        />
+        {props.data.location && (
+          <ContactCard
+            icon={<LocationOnIcon color="primary" />}
+            text={props.data.location}
+          />
+        )}
       </div>
       <ContactForm />
     </section>
