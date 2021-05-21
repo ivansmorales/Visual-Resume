@@ -18,7 +18,11 @@ const Home = (props: HomeProps) => {
             <h1>
               Iván <span>Morales</span>
             </h1>
-            <VerticalCarousel words={props.data.titles} />
+            <div className="description">
+              <span>Soy &nbsp;</span>
+              <VerticalCarousel words={props.data.titles} />
+            </div>
+
             <div className="button_container">
               <button>Descarga mi CV</button>
             </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
-import './styles.scss';
 
 interface VerticalCarouselProps {
   words: string[];
@@ -10,7 +9,6 @@ interface VerticalCarouselProps {
 const VerticalCarousel = (props: VerticalCarouselProps) => {
   return (
     <div className="vertical__carousel">
-      <span>Soy &nbsp;</span>
       <Carousel
         autoPlay={true}
         showArrows={false}

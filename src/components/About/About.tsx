@@ -11,14 +11,16 @@ interface AboutProps {
 const About = (props: AboutProps) => {
   return (
     <section className="about__section" id="about">
-      <h1>
-        Sobre <span>mí</span>
-      </h1>
-      <div className="welcome">
-        Hola! Soy {props.data.homeData.name} y
-        <VerticalCarousel words={props.data.homeData.titles} />
+      <div className="container">
+        <h1>
+          Sobre <span>mí</span>
+        </h1>
+        <div className="description">
+          Hola! Soy {props.data.homeData.name} y soy
+          <VerticalCarousel words={props.data.homeData.titles} />
+        </div>
+        <p>{props.data.paragraph}</p>
       </div>
-      <p>{props.data.paragraph}</p>
     </section>
   );
 };
