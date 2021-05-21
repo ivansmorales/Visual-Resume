@@ -16,7 +16,7 @@ const About = (props: AboutProps) => {
           Sobre <span>mí</span>
         </h1>
         <div className="description">
-          Hola! Soy {props.data.homeData.name} y soy
+          <h4>Hola! Soy {props.data.homeData.name} y soy&nbsp;</h4>
           <VerticalCarousel words={props.data.homeData.titles} />
         </div>
         <p>{props.data.paragraph}</p>

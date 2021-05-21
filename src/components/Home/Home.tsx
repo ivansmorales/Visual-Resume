@@ -24,7 +24,9 @@ const Home = (props: HomeProps) => {
             </div>
 
             <div className="button_container">
-              <button>Descarga mi CV</button>
+              <a href={'../../../docs/resume.pdf'}>
+                <button>Descarga mi CV</button>
+              </a>
             </div>
           </Grid>
         </Grid>
