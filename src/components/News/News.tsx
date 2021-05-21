@@ -43,7 +43,7 @@ const News = () => {
   return (
     <section className="news__section" id="news">
       <div className="container">
-        <h1>
+        <h1 className="header">
           Github <span>Contributions</span>
         </h1>
         <div className="last-repos">

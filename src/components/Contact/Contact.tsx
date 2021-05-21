@@ -8,7 +8,7 @@ import ContactForm from './ContactForm/ContactForm';
 const Contact = () => {
   return (
     <section className="contact__section" id="contact">
-      <h1>Contact</h1>
+      <h1 className="header">Contact</h1>
       <div className="cards">
         <ContactCard icon={<PhoneIcon color="primary" />} text={'5527239028'} />
         <ContactCard

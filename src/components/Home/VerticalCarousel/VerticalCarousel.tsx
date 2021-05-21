@@ -3,7 +3,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
 const VerticalCarousel = () => {
-  let data = ['Ingeniero', 'Estudiante', 'Desarrollador web'];
+  let data = ['Ingeniero', 'Estudiante', 'Desarrollador'];
 
   return (
     <div>

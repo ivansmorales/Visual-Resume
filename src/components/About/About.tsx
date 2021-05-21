@@ -3,7 +3,7 @@ import './styles.scss';
 const About = () => {
   return (
     <section className="about__section" id="about">
-      <h2>Sobre mí</h2>
+      <h1 className="header">Sobre mí</h1>
     </section>
   );
 };

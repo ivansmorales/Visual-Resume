@@ -10,11 +10,13 @@ const Home = () => {
         <Grid container spacing={3}>
           <Grid item xs={12} lg={12}>
             <img alt="Programmer" src={'/images/programmer.jpg'} />
-            <h2>
+            <h1>
               Iván <span>Morales</span>
-            </h2>
-            <span>Soy &nbsp;</span>
-            <VerticalCarousel />
+            </h1>
+            <div className="description">
+              <span>Soy &nbsp;</span>
+              <VerticalCarousel />
+            </div>
             <div className="button_container">
               <button>Descarga mi CV</button>
             </div>
