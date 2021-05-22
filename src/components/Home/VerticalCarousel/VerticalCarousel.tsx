@@ -17,7 +17,7 @@ const VerticalCarousel = (props: VerticalCarouselProps) => {
         showThumbs={false}
         infiniteLoop={true}
         stopOnHover={false}
-        interval={5000}
+        interval={3000}
         axis="vertical"
       >
         {props.words.map((word, index) => (

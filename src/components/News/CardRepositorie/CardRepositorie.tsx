@@ -7,32 +7,39 @@ import './styles.scss';
 interface CardRepositorieProps {
   name: string;
   url: string;
-  created_at: string;
-  updated_at: string;
+  created_at?: string;
+  updated_at?: string;
+  num?: string;
 }
 
 const CardRepositorie = (props: CardRepositorieProps) => {
-  console.log(props.name);
-
   return (
     <div>
       <Card>
         <CardContent>
-          <Typography variant="h6" component="h2" gutterBottom>
-            {props.name}
-          </Typography>
-          <Typography variant="subtitle2" gutterBottom>
-            {props.url}
-          </Typography>
-          <Typography variant="caption" gutterBottom>
-            Fecha de creación:
-            {' ' + new Date(props.created_at).toDateString()}
-          </Typography>{' '}
-          <br />
-          <Typography variant="caption" gutterBottom>
-            Fecha de actualización:
-            {' ' + new Date(props.updated_at).toDateString()}
-          </Typography>
+          <h5>{props.name}</h5>
+          <h6>Url: {props.url}</h6>
+          <Typography variant="subtitle2" gutterBottom></Typography>
+          {props.created_at && (
+            <Typography variant="caption" gutterBottom>
+              Fecha de creación:
+              {' ' + new Date(props.created_at).toDateString()} <br />
+            </Typography>
+          )}
+
+          {props.updated_at && (
+            <Typography variant="caption" gutterBottom>
+              Fecha de actualización:
+              {' ' + new Date(props.updated_at).toDateString()}
+            </Typography>
+          )}
+
+          {props.num && (
+            <Typography variant="caption" gutterBottom>
+              Número de commits:
+              {' ' + props.num}
+            </Typography>
+          )}
         </CardContent>
       </Card>
     </div>
