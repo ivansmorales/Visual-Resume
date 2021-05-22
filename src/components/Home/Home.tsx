@@ -16,7 +16,7 @@ const Home = (props: HomeProps) => {
           <Grid item xs={12} lg={12}>
             <img alt="Programmer" src={'/images/programmer.jpg'} />
             <h1>
-              Iván <span>Morales</span>
+              {props.data.name} <span>{props.data.subname}</span>
             </h1>
             <div className="description">
               <span>Soy &nbsp;</span>

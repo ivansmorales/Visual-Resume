@@ -5,7 +5,7 @@ export const AboutContent: About = {
   homeData: HomeContent,
   paragraph:
     'Soy un estudiante de software apasionado por aprender cosas nuevas cada día.',
-  age: 22,
+  age: 30,
   phone: '55 2723 9028',
   linkedin: 'ivannmg',
   interests: ['leer', 'programar'],
