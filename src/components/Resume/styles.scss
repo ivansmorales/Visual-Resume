@@ -1,0 +1,23 @@
+@import 'theme/colors', 'theme/variables';
+
+.resume__section {
+  h1,
+  span {
+    color: $color-primary;
+  }
+  .experience,
+  .section {
+    margin: $spacing 0;
+    ul {
+      padding: 0 $spacing;
+      li {
+        font-size: $font-size-xs;
+      }
+    }
+  }
+  .button__container,
+  .tools,
+  .item {
+    margin: $spacing 0;
+  }
+}

@@ -1,0 +1,10 @@
+@import 'theme/colors', 'theme/variables';
+
+.news__section {
+  .header {
+    text-align: left;
+  }
+  .last_repos {
+    margin: $spacing-half 0;
+  }
+}

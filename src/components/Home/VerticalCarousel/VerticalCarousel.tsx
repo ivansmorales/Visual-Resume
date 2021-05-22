@@ -2,11 +2,13 @@ import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
-const VerticalCarousel = () => {
-  let data = ['Ingeniero', 'Estudiante', 'Desarrollador web'];
+interface VerticalCarouselProps {
+  words: string[];
+}
 
+const VerticalCarousel = (props: VerticalCarouselProps) => {
   return (
-    <div>
+    <div className="vertical__carousel">
       <Carousel
         autoPlay={true}
         showArrows={false}
@@ -15,10 +17,10 @@ const VerticalCarousel = () => {
         showThumbs={false}
         infiniteLoop={true}
         stopOnHover={false}
-        interval={5000}
+        interval={3000}
         axis="vertical"
       >
-        {data.map((word, index) => (
+        {props.words.map((word, index) => (
           <span key={index}>
             <b>{word}</b>
           </span>

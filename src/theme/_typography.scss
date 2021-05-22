@@ -10,7 +10,6 @@ h1 {
   font-family: $font-family-primary;
   font-size: $font-size-h1;
   font-weight: $font-weight-bold;
-
   @media screen and (max-width: 400px) {
     font-size: 25px;
   }

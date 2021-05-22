@@ -1,0 +1,21 @@
+@import 'theme/colors', 'theme/variables';
+
+.about__section {
+  h1 span {
+    color: $color-primary;
+  }
+  .description {
+    margin-top: $spacing;
+    align-items: center;
+    display: flex;
+    span {
+      color: $color-primary;
+    }
+  }
+  .my-info {
+    margin: $spacing 0;
+    p {
+      margin: $spacing-half 0;
+    }
+  }
+}

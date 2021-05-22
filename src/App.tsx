@@ -6,7 +6,11 @@ import NavbarXs from './components/NavbarXs/NavbarXs';
 import Resume from './components/Resume/Resume';
 import News from './components/News/News';
 import './theme/styles.scss';
+
 import { createMuiTheme, Paper, ThemeProvider } from '@material-ui/core';
+import { AboutContent } from './content/About/AboutContent';
+import { HomeContent } from './content/Home/HomeContent';
+import { ContactContent } from './content/Contact/ContactContent';
 
 function App() {
   const [showSection, setShowSection] = useState('Home');
@@ -27,11 +31,11 @@ function App() {
             setDarkMode={setDarkMode}
             darkMode={darkMode}
           />
-          {showSection === 'Home' && <Home />}
-          {showSection === 'About' && <About />}
+          {showSection === 'Home' && <Home data={HomeContent} />}
+          {showSection === 'About' && <About data={AboutContent} />}
           {showSection === 'Resume' && <Resume />}
           {showSection === 'News' && <News />}
-          {showSection === 'Contact' && <Contact />}
+          {showSection === 'Contact' && <Contact data={ContactContent} />}
         </Paper>
       </ThemeProvider>
     </>
