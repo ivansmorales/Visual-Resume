@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Visual Resume
 
-## Create app
+## Created using Create-react-app
 
 ```
 `npx create-react-app my-app --template typescript`
